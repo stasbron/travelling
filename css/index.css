@@ -28,7 +28,7 @@ nav .logo{
     float: left;
     font-size: 28px;
     font-weight: bold;
-    font-weight: 1500;
+    font-weight: 900;
     transition: 3s;
 }
 
@@ -145,7 +145,7 @@ header{
 }
 
 
-#about-title{
+#title-information{
     color: rgb(83, 27, 1);
     font-size: 30px;
     text-decoration: none;
@@ -154,28 +154,41 @@ header{
     font-weight: bold;
 }
 
-#about-more{
+
+#title-information-subject{
+    color: rgb(83, 27, 1);
+    font-size: 30px;
+    text-decoration: none;
+    text-transform: lowercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+#more-about{
     color: rgb(0, 0, 0);
     font-size: 25px;
     text-decoration: none;
-    letter-spacing: none;
     font-weight: bold;
-    font-weight: 1500;
+    font-weight: 900;
+    margin-top: -10px;
+}
+
+#more-about-subject{
+    color: rgb(0, 0, 0);
+    font-size: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    font-weight: 900;
     margin-top: -10px;
 }
 
 
-#about-paragraph-first, 
-#about-paragraph-second, 
-#about-paragraph-third, 
-#about-paragraph-forth{
+.paragraph {
     color: rgb(65, 65, 65);
-    font-size: 1rem;
+    font-size: 16px;
     text-decoration: none;
-    letter-spacing: none;
-    font-weight: 1500;
     margin-top: -10px;
-    
+    color: black;
 }
 
 .about-button {
