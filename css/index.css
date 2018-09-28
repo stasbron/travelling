@@ -1,11 +1,11 @@
-body, html{
+body, html {
     margin: auto;
     padding: 0;
     font-family: 'Raleway', sans-serif;
     max-width: 1920px;
 }
 
-nav{
+nav {
     position: absolute;
     top: 0;
     left: 0;
@@ -14,16 +14,15 @@ nav{
     padding: 10px 100px;
     box-sizing: border-box;
     transition: .3s;
-
 }
 
-nav.black{
+nav.black {
     background: rgba(0, 0, 0, 0.5);
     height: 100px;
     padding: 10px 100px;
 }
 
-nav .logo{
+nav .logo {
     padding: 22px 20px;
     height: 80px;
     float: left;
@@ -33,28 +32,24 @@ nav .logo{
     transition: 3s;
 }
 
-
-nav.black .logo{
+nav.black .logo {
     color: #fff;
-
 }
 
-nav ul{
+nav ul {
     list-style: none;
     float: right;
     margin: 0;
     padding: 0;
     display: flex;
     font-size: 20px;
-
 }
 
-nav ul li{
+nav ul li {
     list-style: none;
-
 }
 
-nav ul li a{
+nav ul li a {
     line-height: 80px;
     color: #151515;
     padding: 12px 30px;
@@ -66,29 +61,21 @@ nav ul li a{
 
 nav.black ul li a {
     color: #fff;
-
 }
 
 nav ul li a:focus {
     outline: none;
 }
 
-nav ul li a:hover{
+nav ul li a:hover {
     color: rgb(255, 255, 255);
 }
 
-
-nav.black ul li a:hover{
+nav.black ul li a:hover {
     color: rgb(255, 255, 255);
 }
 
-
-
-
-
-
-
-video{
+video {
     position: absolute;
     right: 0;
     bottom: 0;
@@ -97,60 +84,53 @@ video{
     z-index: -100;
 }
 
-@media (max-aspect-ratio: 16/9){
-    video{
+@media (max-aspect-ratio: 16/9) {
+    video {
         width: auto;
         height: 100%;
     }
 }
 
-header{
+header {
     height: 100vh;
-    position: relative; 
+    position: relative;
 }
 
-
-.head-title{
+.head-title {
     font-family: 'Kaushan Script', cursive;
     margin: 0;
     top: 50%;
     left: 50%;
     margin-right: -50%;
-    transform: translate(-50%, -50%); 
+    transform: translate(-50%, -50%);
     position: absolute;
     font-size: 70px;
-    color:rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
 }
 
 /* ABOUT */
-
-
-.about{
+.about {
     width: 100%;
     height: 100vh;
-    
 }
+
 .about-main {
     width: 50%;
     height: 100vh;
     float: left;
     background-color: rgb(212, 212, 212);
-    
-  }
-
-
-.text-about{
-    margin: 5% 10%;
-    display: block;
-    
 }
 
-.stanislav-personal-photo{
+.text-about {
+    margin: 5% 10%;
+    display: block;
+}
+
+.stanislav-personal-photo {
     margin-bottom: 20px;
 }
 
-
-#title-information{
+#title-information {
     color: rgb(83, 27, 1);
     font-size: 30px;
     text-decoration: none;
@@ -159,8 +139,7 @@ header{
     font-weight: bold;
 }
 
-
-#title-information-subject{
+#title-information-subject {
     color: rgb(83, 27, 1);
     font-size: 30px;
     text-decoration: none;
@@ -169,7 +148,7 @@ header{
     font-weight: bold;
 }
 
-#more-about{
+#more-about {
     color: rgb(0, 0, 0);
     font-size: 25px;
     text-decoration: none;
@@ -178,7 +157,7 @@ header{
     margin-top: -10px;
 }
 
-#more-about-subject{
+#more-about-subject {
     color: rgb(0, 0, 0);
     font-size: 25px;
     text-decoration: none;
@@ -186,7 +165,6 @@ header{
     font-weight: 900;
     margin-top: -10px;
 }
-
 
 .paragraph {
     color: rgb(65, 65, 65);
@@ -213,34 +191,28 @@ header{
     background-color: rgb(102, 102, 102);
 }
 
-
-.subject{
+.subject {
     width: 50%;
     height: 100vh;
     float: right;
     background-color: rgb(255, 255, 255);
-    
 }
 
-
-.text-why{
+.text-why {
     margin: 5% 10%;
     display: block;
 }
 
-
-.why{
+.why {
     width: 100%;
     height: 135px;
     display: block;
-    color:black;
-    
+    color: black;
 }
 
-.icon{
-width: 6%;
-float: left;
-
+.icon {
+    width: 6%;
+    float: left;
 }
 
 .icon img {
@@ -250,228 +222,196 @@ float: left;
 }
 
 .description {
-   
     width: 90%;
     margin-top: 0;
     float: right;
     height: 135px;
-  
 }
-
 
 .description-text {
-    text-align:left;
+    text-align: left;
     font-size: 20px;
     color: rgb(0, 0, 0);
-    width:100%;
+    width: 100%;
     font-weight: bold;
-
 }
 
-
 /* parallax */
-
-
 .parallax {
     background-image: url("parallax/road.jpg");
-    min-height: 400px; 
+    min-height: 400px;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-
 /* blog */
-
-.blog{
-  width: 100%;
-  background-color: #151515;
- 
+.blog {
+    width: 100%;
+    background-color: #151515;
 }
 
-.blog_section{
-   padding: 40px;
+.blog_section {
+    padding: 40px;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-around;
-    align-items: center; 
- 
-
+    align-items: center;
 }
 
-.blog_1{
+.blog_1 {
     width: 320px;
     height: 380px;
     background-color: rgb(212, 212, 212);
     text-align: center;
 }
 
-
-.blog_1 img{
+.blog_1 img {
     width: 100%;
     height: 200px;
     margin-bottom: 20px;
 }
 
-
-.blog_2{
+.blog_2 {
     width: 320px;
     height: 380px;
     background-color: rgb(212, 212, 212);
     text-align: center;
 }
 
-
-.blog_2 img{
+.blog_2 img {
     width: 100%;
     height: 200px;
     margin-bottom: 20px;
 }
 
-
-.blog_3{
+.blog_3 {
     width: 320px;
     height: 380px;
     background-color: rgb(212, 212, 212);
     text-align: center;
 }
 
-
-.blog_3 img{
+.blog_3 img {
     width: 100%;
     height: 200px;
     margin-bottom: 20px;
 }
 
-
-.blog_4{
+.blog_4 {
     width: 320px;
     height: 380px;
     background-color: rgb(212, 212, 212);
     text-align: center;
 }
 
-
-.blog_4 img{
+.blog_4 img {
     width: 100%;
     height: 200px;
     margin-bottom: 20px;
 }
 
-
-.blog_5{
+.blog_5 {
     width: 320px;
     height: 380px;
     background-color: rgb(212, 212, 212);
     text-align: center;
 }
 
-
-.blog_5 img{
+.blog_5 img {
     width: 100%;
     height: 200px;
     margin-bottom: 20px;
 }
 
-
-.blog_6{
+.blog_6 {
     width: 320px;
     height: 380px;
     background-color: rgb(212, 212, 212);
     text-align: center;
 }
 
-
-.blog_6 img{
+.blog_6 img {
     width: 100%;
     height: 200px;
     margin-bottom: 20px;
 }
 
-
-.blog_1:hover{
+.blog_1:hover {
     box-shadow: 0 0 20px rgb(212, 212, 212);
     cursor: pointer;
 }
 
-
-.blog_2:hover{
+.blog_2:hover {
     box-shadow: 0 0 20px rgb(212, 212, 212);
     cursor: pointer;
 }
 
-
-.blog_3:hover{
+.blog_3:hover {
     box-shadow: 0 0 20px rgb(212, 212, 212);
     cursor: pointer;
 }
 
-
-.blog_4:hover{
+.blog_4:hover {
     box-shadow: 0 0 20px rgb(212, 212, 212);
     cursor: pointer;
 }
 
-
-.blog_5:hover{
+.blog_5:hover {
     box-shadow: 0 0 20px rgb(212, 212, 212);
     cursor: pointer;
 }
 
-
-.blog_6:hover{
+.blog_6:hover {
     box-shadow: 0 0 20px rgb(212, 212, 212);
     cursor: pointer;
 }
 
-
-
-  /* parallax */
-
-
+/* parallax */
 .parallax2 {
     background-image: url("parallax/desert.jpg");
-    min-height: 400px; 
+    min-height: 400px;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-
-
 /*gallery*/
-.gallery{
+.gallery {
     width: 100%;
     min-height: 400px;
     background-color: rgb(56, 56, 56);
 }
 
-
 .wrap {
     overflow: hidden;
     margin: 0 auto;
-  }
-  .box {
+}
+
+.box {
     float: left;
     position: relative;
     width: 20%;
     padding-bottom: 20%;
-  }
-  .boxInner {
+}
+
+.boxInner {
     position: absolute;
     left: 10px;
     right: 10px;
     top: 10px;
     bottom: 10px;
     overflow: hidden;
-  }
-  .boxInner img {
+}
+
+.boxInner img {
     width: 100%;
-  }
-  .boxInner .titleBox {
+}
+
+.boxInner .titleBox {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -486,13 +426,14 @@ float: left;
     -moz-transition: all 0.3s ease-out;
     -o-transition: all 0.3s ease-out;
     transition: all 0.3s ease-out;
-  }
+}
+
 .gallery-wrapper .boxInner:hover .titleBox, .touch .boxInner.touchFocus .titleBox {
     margin-bottom: 0;
-  }
+}
 
 /*contact*/
-.contact{
+.contact {
     margin: 0;
     padding: 0;
     line-height: 1.5em;
@@ -501,44 +442,41 @@ float: left;
     display: flex;
     align-items: center;
     justify-content: center;
-    
-    
 }
 
-.form h2{
+.form h2 {
     margin: 0 auto;
     text-align: center;
     color: #ffffff;
 }
+
 .form {
     width: 30em;
     margin: 3%;
     padding: 1.5em 0;
-  }
-  
-  form p {
+}
+
+form p {
     margin-bottom: 1.5em;
-  }
-  
-  *::-webkit-input-placeholder {
-    color: #7e7e7e;
-  }
-  
-  *:-moz-placeholder {
-    color: #7e7e7e;
-  }
-  
-  *::-moz-placeholder {
+}
+
+*::-webkit-input-placeholder {
     color: #7e7e7e;
 }
-  
+
+*:-moz-placeholder {
+    color: #7e7e7e;
+}
+
+*::-moz-placeholder {
+    color: #7e7e7e;
+}
+
 *:-ms-input-placeholder {
     color: #7e7e7e;
 }
-  
-  input[type=text],
-  input[type=email],
-  textarea {
+
+input[type=text], input[type=email], textarea {
     width: 90%;
     line-height: 1.5em;
     font-family: inherit;
@@ -553,28 +491,21 @@ float: left;
     padding-bottom: 0.75em;
     border: 1px solid black;
 }
-  
-  input[type=text],
-  input[type=email],
-  input[type=url],
-  input[type=password] {
+
+input[type=text], input[type=email], input[type=url], input[type=password] {
     height: 1.5em;
 }
-  
+
 textarea {
     height: 6em;
     vertical-align: top;
 }
-  
-  input[type=text]:focus,
-  input[type=email]:focus,
-  input[type=url]:focus,
-  input[type=password]:focus,
-  textarea:focus {
+
+input[type=text]:focus, input[type=email]:focus, input[type=url]:focus, input[type=password]:focus, textarea:focus {
     outline: 0;
     border: 1px solid black;
 }
-  
+
 input[type=submit] {
     border: none;
     margin: 0;
@@ -593,6 +524,7 @@ input[type=submit] {
     transition: 1s;
     border: 1px solid #151515;
 }
+
 input[type=submit]:hover {
     -moz-transition: 1s;
     -o-transition: 1s;
@@ -600,30 +532,26 @@ input[type=submit]:hover {
     transition: 1s;
     color: white;
     background: rgb(83, 27, 1);
-
 }
 
-
 /* parallax */
-
 .parallax3 {
     background-image: url("parallax/adventure.jpg");
-    min-height: 400px; 
+    min-height: 400px;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-  /*footer*/
-.end-of-site{
+/*footer*/
+.end-of-site {
     width: 100%;
     height: 180px;
     background-color: rgb(56, 56, 56);
-} 
+}
 
-
-.end-of-site-icons{
+.end-of-site-icons {
     width: 100%;
     height: 60px;
     background-color: #151515;
@@ -632,11 +560,7 @@ input[type=submit]:hover {
     justify-content: center;
 }
 
-.end-of-site-icons img{
+.end-of-site-icons img {
     margin-right: 10px;
     margin-left: 10px;
 }
-
-
-
-
