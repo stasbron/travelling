@@ -1,11 +1,12 @@
 body, html{
-    margin: 0;
+    margin: auto;
     padding: 0;
     font-family: 'Raleway', sans-serif;
+    max-width: 1920px;
 }
 
 nav{
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
@@ -73,12 +74,12 @@ nav ul li a:focus {
 }
 
 nav ul li a:hover{
-    color: red;
+    color: rgb(255, 255, 255);
 }
 
 
 nav.black ul li a:hover{
-    color: red;
+    color: rgb(255, 255, 255);
 }
 
 
@@ -144,6 +145,10 @@ header{
     
 }
 
+.stanislav-personal-photo{
+    margin-bottom: 20px;
+}
+
 
 #title-information{
     color: rgb(83, 27, 1);
@@ -185,7 +190,7 @@ header{
 
 .paragraph {
     color: rgb(65, 65, 65);
-    font-size: 16px;
+    font-size: 14px;
     text-decoration: none;
     margin-top: -10px;
     color: black;
@@ -232,7 +237,6 @@ header{
     
 }
 
-
 .icon{
 width: 6%;
 float: left;
@@ -260,7 +264,6 @@ float: left;
     font-size: 20px;
     color: rgb(0, 0, 0);
     width:100%;
-    margin: 0;
     font-weight: bold;
 
 }
@@ -283,7 +286,6 @@ float: left;
 
 .blog{
   width: 100%;
-  min-height: 100vh;
   background-color: #151515;
  
 }
@@ -295,6 +297,7 @@ float: left;
     flex-wrap: nowrap;
     justify-content: space-around;
     align-items: center; 
+ 
 
 }
 
@@ -309,6 +312,7 @@ float: left;
 .blog_1 img{
     width: 100%;
     height: 200px;
+    margin-bottom: 20px;
 }
 
 
@@ -323,6 +327,7 @@ float: left;
 .blog_2 img{
     width: 100%;
     height: 200px;
+    margin-bottom: 20px;
 }
 
 
@@ -337,6 +342,7 @@ float: left;
 .blog_3 img{
     width: 100%;
     height: 200px;
+    margin-bottom: 20px;
 }
 
 
@@ -351,6 +357,7 @@ float: left;
 .blog_4 img{
     width: 100%;
     height: 200px;
+    margin-bottom: 20px;
 }
 
 
@@ -365,6 +372,7 @@ float: left;
 .blog_5 img{
     width: 100%;
     height: 200px;
+    margin-bottom: 20px;
 }
 
 
@@ -379,41 +387,42 @@ float: left;
 .blog_6 img{
     width: 100%;
     height: 200px;
+    margin-bottom: 20px;
 }
 
 
 .blog_1:hover{
-    box-shadow: inset 0 0 20px #000000;
+    box-shadow: 0 0 20px rgb(212, 212, 212);
     cursor: pointer;
 }
 
 
 .blog_2:hover{
-    box-shadow: inset 0 0 20px #000000;
+    box-shadow: 0 0 20px rgb(212, 212, 212);
     cursor: pointer;
 }
 
 
 .blog_3:hover{
-    box-shadow: inset 0 0 20px #000000;
+    box-shadow: 0 0 20px rgb(212, 212, 212);
     cursor: pointer;
 }
 
 
 .blog_4:hover{
-    box-shadow: inset 0 0 20px #000000;
+    box-shadow: 0 0 20px rgb(212, 212, 212);
     cursor: pointer;
 }
 
 
 .blog_5:hover{
-    box-shadow: inset 0 0 20px #000000;
+    box-shadow: 0 0 20px rgb(212, 212, 212);
     cursor: pointer;
 }
 
 
 .blog_6:hover{
-    box-shadow: inset 0 0 20px #000000;
+    box-shadow: 0 0 20px rgb(212, 212, 212);
     cursor: pointer;
 }
 
@@ -423,7 +432,7 @@ float: left;
 
 
 .parallax2 {
-    background-image: url("parallax/sun.jpg");
+    background-image: url("parallax/desert.jpg");
     min-height: 400px; 
     background-attachment: fixed;
     background-position: center;
@@ -434,11 +443,200 @@ float: left;
 
 
 /*gallery*/
-
 .gallery{
     width: 100%;
-    height: 50vh;
-    background-color: aqua;
+    min-height: 400px;
+    background-color: rgb(56, 56, 56);
 }
 
+
+.wrap {
+    overflow: hidden;
+    margin: 0 auto;
+  }
+  .box {
+    float: left;
+    position: relative;
+    width: 20%;
+    padding-bottom: 20%;
+  }
+  .boxInner {
+    position: absolute;
+    left: 10px;
+    right: 10px;
+    top: 10px;
+    bottom: 10px;
+    overflow: hidden;
+  }
+  .boxInner img {
+    width: 100%;
+  }
+  .boxInner .titleBox {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin-bottom: -50px;
+    background: #fff;
+    background: rgba(0, 0, 0, 0.5);
+    color: #FFF;
+    padding: 10px;
+    text-align: center;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+  }
+.gallery-wrapper .boxInner:hover .titleBox, .touch .boxInner.touchFocus .titleBox {
+    margin-bottom: 0;
+  }
+
 /*contact*/
+.contact{
+    margin: 0;
+    padding: 0;
+    line-height: 1.5em;
+    background-color: #151515;
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+
+.form h2{
+    margin: 0 auto;
+    text-align: center;
+    color: #ffffff;
+}
+.form {
+    width: 30em;
+    margin: 3%;
+    padding: 1.5em 0;
+  }
+  
+  form p {
+    margin-bottom: 1.5em;
+  }
+  
+  *::-webkit-input-placeholder {
+    color: #7e7e7e;
+  }
+  
+  *:-moz-placeholder {
+    color: #7e7e7e;
+  }
+  
+  *::-moz-placeholder {
+    color: #7e7e7e;
+}
+  
+*:-ms-input-placeholder {
+    color: #7e7e7e;
+}
+  
+  input[type=text],
+  input[type=email],
+  textarea {
+    width: 90%;
+    line-height: 1.5em;
+    font-family: inherit;
+    border: none;
+    color: #121212;
+    background: #d4d4d4;
+    overflow: auto;
+    resize: none;
+    padding-top: 0.75em;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 0.75em;
+    border: 1px solid black;
+}
+  
+  input[type=text],
+  input[type=email],
+  input[type=url],
+  input[type=password] {
+    height: 1.5em;
+}
+  
+textarea {
+    height: 6em;
+    vertical-align: top;
+}
+  
+  input[type=text]:focus,
+  input[type=email]:focus,
+  input[type=url]:focus,
+  input[type=password]:focus,
+  textarea:focus {
+    outline: 0;
+    border: 1px solid black;
+}
+  
+input[type=submit] {
+    border: none;
+    margin: 0;
+    width: 100%;
+    text-align: center;
+    font-family: inherit;
+    line-height: 1.5em;
+    font-size: inherit;
+    cursor: pointer;
+    padding-top: 0.75em;
+    padding-bottom: 0.75em;
+    color: #151515;
+    -moz-transition: 1s;
+    -o-transition: 1s;
+    -webkit-transition: 1s;
+    transition: 1s;
+    border: 1px solid #151515;
+}
+input[type=submit]:hover {
+    -moz-transition: 1s;
+    -o-transition: 1s;
+    -webkit-transition: 1s;
+    transition: 1s;
+    color: white;
+    background: rgb(83, 27, 1);
+
+}
+
+
+/* parallax */
+
+.parallax3 {
+    background-image: url("parallax/adventure.jpg");
+    min-height: 400px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+  /*footer*/
+.end-of-site{
+    width: 100%;
+    height: 180px;
+    background-color: rgb(56, 56, 56);
+} 
+
+
+.end-of-site-icons{
+    width: 100%;
+    height: 60px;
+    background-color: #151515;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.end-of-site-icons img{
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+
+
+
