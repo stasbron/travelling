@@ -1,191 +1,144 @@
-@media only screen and (max-width: 1000px){
-    
-
-    .head-title{
+@media only screen and (max-width: 1000px) {
+    .head-title {
         font-size: 30px;
     }
-
-  
-
 }
 
+@media only screen and (max-width: 1200px) {
+    .blog {
+        margin: 0;
+    }
 
-@media only screen and (max-width: 1200px){
-    
-.blog{
-    margin: 0;
-   
-  }
+    .blog_section {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0;
+    }
 
-    .blog_section{
-         display: flex;
-         flex-wrap: wrap;
-         padding: 0;
-     }
-
-     .blog_1, .blog_2, .blog_3, .blog_4, .blog_5, .blog_6{
+    .blog_1, .blog_2, .blog_3, .blog_4, .blog_5, .blog_6 {
         margin: 20px;
-     }
+    }
 }
-
 
 /*gallery*/
 @media only screen and (max-width : 480px) {
-    /* Smartphone view: 1 tile */
-    .box {
-      width: 100%;
-      padding-bottom: 100%;
+    /* Smartphone view: 1 tile */ .box {
+        width: 100%;
+        padding-bottom: 100%;
     }
-  }
-  @media only screen and (max-width : 650px) and (min-width : 481px) {
-    /* Tablet view: 2 tiles */
-    .box {
-      width: 50%;
-      padding-bottom: 50%;
+}
+
+@media only screen and (max-width : 650px) and (min-width : 481px) {
+    /* Tablet view: 2 tiles */ .box {
+        width: 50%;
+        padding-bottom: 50%;
     }
-  }
-  @media only screen and (max-width : 1050px) and (min-width : 651px) {
-    /* Small desktop / ipad view: 3 tiles */
-    .box {
-      width: 33.3%;
-      padding-bottom: 33.3%;
+}
+
+@media only screen and (max-width : 1050px) and (min-width : 651px) {
+    /* Small desktop / ipad view: 3 tiles */ .box {
+        width: 33.3%;
+        padding-bottom: 33.3%;
     }
-  }
-  @media only screen and (max-width : 1290px) and (min-width : 1051px) {
-    /* Medium desktop: 4 tiles */
-    .box {
-      width: 25%;
-      padding-bottom: 25%;
+}
+
+@media only screen and (max-width : 1290px) and (min-width : 1051px) {
+    /* Medium desktop: 4 tiles */ .box {
+        width: 25%;
+        padding-bottom: 25%;
     }
-  }
-  
-  
-  
-  /*Blog page layout*/
-  @media (min-width: 601px) and (max-width: 1000px) {
+}
+
+/*Blog page layout*/
+@media (min-width: 601px) and (max-width: 1000px) {
     .blog-post {
-      width: 90%;
+        width: 90%;
     }
-  
+
     .blog-content {
-      width: 75%;
+        width: 75%;
     }
-  
+
     .blog-hero {
-      padding-bottom: 35%;
+        padding-bottom: 35%;
     }
-  }
-  @media (max-width: 600px) {
+}
+
+@media (max-width: 600px) {
     .blog-post {
-      font-size: .9em;
-      width: 90%;
+        font-size: .9em;
+        width: 90%;
     }
-  
+
     .blog-content {
-      width: 80%;
+        width: 80%;
     }
-  
+
     .blog-img {
-      width: 90%;
-      padding-bottom: 50%;
+        width: 90%;
+        padding-bottom: 50%;
     }
-  
+
     .blog-hero {
-      padding-bottom: 60%;
+        padding-bottom: 60%;
     }
-  }
-  
-   /*______________________________Navigation____________________________________*/
-   
-   
-  @media (max-width: 1150px) {
-  
- #hamburger{
-   display: block;
-    display: flex;
-    justify-content:flex-end;
-  
-  
 }
 
+/*______________________________Navigation____________________________________*/
+@media (max-width: 1150px) {
+    #hamburger {
+        display: block;
+        display: flex;
+        justify-content: flex-end;
+    }
 
-.menu{
-    padding-top: 20px;
-    width: 100%;
-}
+    .menu {
+        padding-top: 20px;
+        width: 100%;
+    }
 
-nav {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100px;
-    padding: 10px 40px;
-   
-}
+    nav {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100px;
+        padding: 10px 40px;
+    }
 
-nav ul {
-	flex-direction: column;
-	display: none;
-}
+    nav ul {
+        flex-direction: column;
+        display: none;
+    }
 
-.menu li{
-    display: block;
-    height: 40px;
-    
-    
-}
+    .menu li {
+        display: block;
+        height: 40px;
+    }
 
-.menu li a {
-  display: block;
-	font-size: 20px;
-	font-weight: bold;
-	text-decoration: none;
-	margin-left:40px;
-	color: black;
-	width: 100%;
-	padding: 1px;
-  line-height: 20px;
-}
-
+    .menu li a {
+        display: block;
+        font-size: 20px;
+        font-weight: bold;
+        text-decoration: none;
+        margin-left: 40px;
+        color: black;
+        width: 100%;
+        padding: 1px;
+        line-height: 20px;
+    }
 }
 
 @media (max-width: 550px) {
-  
-.logo{
-  display: none;
-}
+    .logo {
+        display: none;
+    }
 
-  header{
+    header {
         background-image: url("parallax/palm.jpg");
         background-size: cover;
-    background-position: center;
-    
+        background-position: center;
     }
 }
-    
-    
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  /*______________________________About layout____________________________________*/
-  
-  
-  
 
-
-
-    
-
-
-
-     
-
-
-
+/*______________________________About layout____________________________________*/

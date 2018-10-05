@@ -36,7 +36,7 @@ $(function() {
     $('.next').click(nextSlide);
     $('.prev').click(prevSlide);
 
-    //stop when i want click prv
+    //stop when i want click 
 
     $('.prev').click(function() {
         clearInterval(sliderTimer);
@@ -51,7 +51,4 @@ $(function() {
         });
     });
 
-
 });
-
-

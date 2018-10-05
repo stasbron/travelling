@@ -76,11 +76,11 @@ nav.black ul li a:hover {
 }
 
 /*burger_______________________________________*/
- #hamburger{
-	display: none;
+#hamburger {
+    display: none;
 }
-/*_____________________________________________________________________________*/
 
+/*_____________________________________________________________________________*/
 video {
     position: absolute;
     right: 0;
@@ -118,9 +118,6 @@ header {
 .about {
     width: 100%;
     min-height: 100vh;
-
-    
-    
 }
 
 .about-main {
@@ -270,7 +267,7 @@ header {
     align-items: center;
 }
 
-a{
+a {
     text-decoration: none;
     color: rgb(0, 0, 0);
 }
@@ -280,7 +277,6 @@ a{
     height: 380px;
     background-color: rgb(212, 212, 212);
     text-align: center;
-   
 }
 
 .blog_1 img {
@@ -475,8 +471,6 @@ form p {
     margin-bottom: 1.5em;
 }
 
-
-
 input[type=text], input[type=email], textarea {
     width: 90%;
     line-height: 1.5em;
@@ -552,29 +546,29 @@ input[type=submit]:hover {
     background-color: rgb(56, 56, 56);
     display: flex;
     justify-content: space-around;
-    flex-wrap:wrap;
+    flex-wrap: wrap;
 }
 
-.end-of-site-home{
+.end-of-site-home {
     height: 100%;
-    width:  320px;
+    width: 320px;
     color: white;
     text-align: center;
 }
 
-.end-of-site-home h3{
- text-decoration: underline;
+.end-of-site-home h3 {
+    text-decoration: underline;
 }
 
-.end-of-site-office{
+.end-of-site-office {
     height: 100%;
-    width:  320px;
+    width: 320px;
     color: white;
     text-align: center;
 }
 
-.end-of-site-office h3{
-     text-decoration: underline;
+.end-of-site-office h3 {
+    text-decoration: underline;
 }
 
 .end-of-site-icons {
