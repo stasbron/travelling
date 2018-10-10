@@ -77,6 +77,10 @@ nav.black ul li a:hover {
     color: rgb(255, 255, 255);
 }
 
+#clockbox{
+    color: white;
+    font-weight: 900;
+}
 /*burger_______________________________________*/
 #hamburger {
     display: none;
