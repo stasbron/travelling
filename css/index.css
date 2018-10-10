@@ -1,8 +1,10 @@
 body, html {
-    margin: auto;
+    margin: 0 auto !important;
     padding: 0;
     font-family: 'Raleway', sans-serif;
     max-width: 1920px;
+    box-sizing:border-box;
+   
 }
 
 nav {
@@ -82,24 +84,27 @@ nav.black ul li a:hover {
 
 /*_____________________________________________________________________________*/
 video {
-    position: absolute;
+    position: absolute; 
     right: 0;
     bottom: 0;
     width: 100%;
     height: auto;
     z-index: -100;
+    
 }
 
 @media (max-aspect-ratio: 16/9) {
     video {
         width: auto;
-        height: 100%;
+        height: 100vh;
     }
 }
 
 header {
-    height: 100vh;
+    min-height: 100vh;
     position: relative;
+    background-size: cover;
+    background-position: center;
 }
 
 .head-title {
@@ -114,18 +119,25 @@ header {
     color: rgb(255, 255, 255);
 }
 /*scroll button*/
+.cd-top.cd-top--show { 
+ /* the button becomes visible */ 
+ visibility: visible;
+ opacity: 1;
+} 
 
-
-
+.cd-top.cd-top--fade-out { 
+ /* if the user keeps scrolling down, the button is out of focus and becomes less visible */ 
+ opacity: .5; 
+}
 /* ABOUT */
 .about {
     width: 100%;
-    min-height: 100vh;
+    height: 100vh;
 }
 
 .about-main {
     width: 50%;
-    height: 100vh;
+    height: 100%;
     float: left;
     background-color: rgb(212, 212, 212);
 }
@@ -202,7 +214,7 @@ header {
 
 .subject {
     width: 50%;
-    height: 100vh;
+    height: 100%;
     float: right;
     background-color: rgb(255, 255, 255);
 }
@@ -210,6 +222,7 @@ header {
 .text-why {
     margin: 5% 10%;
     display: block;
+    min-height: 100%;
 }
 
 .why {
@@ -247,7 +260,7 @@ header {
 
 /* parallax */
 .parallax {
-    background-image: url("parallax/road.jpg");
+    background-image: url("parallax/guy.jpg");
     min-height: 400px;
     background-attachment: fixed;
     background-position: center;
@@ -385,7 +398,7 @@ a {
 
 /* parallax */
 .parallax2 {
-    background-image: url("parallax/desert.jpg");
+    background-image: url("parallax/sky.jpg");
     min-height: 400px;
     background-attachment: fixed;
     background-position: center;
