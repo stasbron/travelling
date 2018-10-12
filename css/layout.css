@@ -139,6 +139,10 @@
         background-size: cover;
         background-position: center;
     }
+
+    .parallax, .parallax2, .parallax3 {
+        display: none;
+    }
 }
 
 /*______________________________About layout____________________________________*/

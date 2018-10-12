@@ -18,11 +18,6 @@ nav {
     transition: .3s;
 }
 
-nav.black {
-    background: rgba(0, 0, 0, 0.5);
-    height: 100px;
-    padding: 10px 100px;
-}
 
 nav .logo {
     padding: 22px 20px;
@@ -32,6 +27,7 @@ nav .logo {
     font-weight: bold;
     font-weight: 900;
     transition: 3s;
+    color: black;
 }
 
 nav.black .logo {
@@ -53,7 +49,7 @@ nav ul li {
 
 nav ul li a {
     line-height: 80px;
-    color: #151515;
+    color: black;
     padding: 12px 30px;
     text-decoration: none;
     text-transform: uppercase;
@@ -70,15 +66,15 @@ nav ul li a:focus {
 }
 
 nav ul li a:hover {
-    color: rgb(255, 255, 255);
+    color: rgba(0, 0, 0, 0.5);
 }
 
 nav.black ul li a:hover {
-    color: rgb(255, 255, 255);
+    color: rgba(0, 0, 0, 0.5);
 }
 
 #clockbox{
-    color: white;
+    color: rgb(0, 0, 0);
     font-weight: 900;
 }
 /*burger_______________________________________*/
@@ -87,28 +83,15 @@ nav.black ul li a:hover {
 }
 
 /*_____________________________________________________________________________*/
-video {
-    position: absolute; 
-    right: 0;
-    bottom: 0;
-    width: 100%;
-    height: auto;
-    z-index: -100;
-    
-}
 
-@media (max-aspect-ratio: 16/9) {
-    video {
-        width: auto;
-        height: 100vh;
-    }
-}
 
 header {
-    min-height: 100vh;
     position: relative;
+    min-height: 100vh;
+    background-image: url(../images/climbing.jpg);
     background-size: cover;
     background-position: center;
+    
 }
 
 .head-title {
@@ -119,150 +102,69 @@ header {
     margin-right: -50%;
     transform: translate(-50%, -50%);
     position: absolute;
-    font-size: 70px;
+    font-size: 75px;
     color: rgb(255, 255, 255);
 }
-/*scroll button*/
-.cd-top.cd-top--show { 
- /* the button becomes visible */ 
- visibility: visible;
- opacity: 1;
-} 
+.retroshadow {
+    text-shadow: 4px 4px 0px #d5d5d5, 7px 7px 0px rgba(0, 0, 0, 0.2);
+  }
 
-.cd-top.cd-top--fade-out { 
- /* if the user keeps scrolling down, the button is out of focus and becomes less visible */ 
- opacity: .5; 
-}
-/* ABOUT */
-.about {
-    width: 100%;
-    height: 100vh;
-}
+  .elegantshadow {
+    text-shadow: 1px -1px 0 #767676, -1px 2px 1px #737272, -2px 4px 1px #767474, -3px 6px 1px #787777, -4px 8px 1px #7b7a7a, -5px 10px 1px #7f7d7d, -6px 12px 1px #828181, -7px 14px 1px #868585, -8px 16px 1px #8b8a89, -9px 18px 1px #8f8e8d, -10px 20px 1px #949392, -11px 22px 1px #999897, -12px 24px 1px #9e9c9c, -13px 26px 1px #a3a1a1, -14px 28px 1px #a8a6a6, -15px 30px 1px #adabab, -16px 32px 1px #b2b1b0, -17px 34px 1px #b7b6b5, -18px 36px 1px #bcbbba, -19px 38px 1px #c1bfbf, -20px 40px 1px #c6c4c4, -21px 42px 1px #cbc9c8, -22px 44px 1px #cfcdcd, -23px 46px 1px #d4d2d1, -24px 48px 1px #d8d6d5, -25px 50px 1px #dbdad9, -26px 52px 1px #dfdddc, -27px 54px 1px #e2e0df, -28px 56px 1px #e4e3e2;
+  }
 
-.about-main {
-    width: 50%;
-    height: 100%;
-    float: left;
-    background-color: rgb(212, 212, 212);
-}
+/* ABOUT ____________________________________________________________________________________________________*/
 
-.text-about {
-    margin: 5% 10%;
+#about_me {
+    display:block;
+    background-color: #151515;
+  }
+
+  .heading {
+    text-align:center;
+    font-size: 1.6em;
+    color: #d4d4d4;
+   padding-top: 40px;
+   margin-top: 0;
+    
+}
+  
+  .carousel-cell {
+  width: 100%;
+  min-height: 450px;
+  margin-right: 10px;
+  }
+  .flickity-prev-next-button {
+  visibility: hidden;
+  }
+  
+  .my-own-photo {
+    height: 220px;
+    width: 220px;
     display: block;
-}
-
-.stanislav-personal-photo {
-    margin-bottom: 20px;
-}
-
-#title-information {
-    color: rgb(83, 27, 1);
-    font-size: 30px;
-    text-decoration: none;
-    text-transform: lowercase;
-    letter-spacing: 2px;
-    font-weight: bold;
-}
-
-#title-information-subject {
-    color: rgb(83, 27, 1);
-    font-size: 30px;
-    text-decoration: none;
-    text-transform: lowercase;
-    letter-spacing: 2px;
-    font-weight: bold;
-}
-
-#more-about {
-    color: rgb(0, 0, 0);
-    font-size: 25px;
-    text-decoration: none;
-    font-weight: bold;
-    font-weight: 900;
-    margin-top: -10px;
-}
-
-#more-about-subject {
-    color: rgb(0, 0, 0);
-    font-size: 25px;
-    text-decoration: none;
-    font-weight: bold;
-    font-weight: 900;
-    margin-top: -10px;
-}
-
-.paragraph {
-    color: rgb(65, 65, 65);
-    font-size: 14px;
-    text-decoration: none;
-    margin-top: -10px;
-    color: black;
-}
-
-.about-button {
-    background-color: rgb(59, 59, 59);
-    border: none;
-    color: white;
-    padding: 15px 32px;
+    margin: 0 auto;
+    margin-top: 60px; 
+  }
+  
+  
+  .text-about-me {
+    text-indent: 30px;
+    font-size: 1.2em;
     text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    cursor: pointer;
-    width: 100%;
-}
+    margin: 70px;
+    color: #d4d4d4;
+  }
 
-.about-button:hover {
-    background-color: rgb(102, 102, 102);
-}
+  .under-about{
+      width: 100%;
+      height: 40px;
+      background-color: #151515;
+  }
+  
+  
 
-.subject {
-    width: 50%;
-    height: 100%;
-    float: right;
-    background-color: rgb(255, 255, 255);
-}
 
-.text-why {
-    margin: 5% 10%;
-    display: block;
-    min-height: 100%;
-}
-
-.why {
-    width: 100%;
-    height: 135px;
-    display: block;
-    color: black;
-}
-
-.icon {
-    width: 6%;
-    float: left;
-}
-
-.icon img {
-    max-height: 20px;
-    max-width: 20px;
-    margin: 0;
-}
-
-.description {
-    width: 90%;
-    margin-top: 0;
-    float: right;
-    height: 135px;
-}
-
-.description-text {
-    text-align: left;
-    font-size: 20px;
-    color: rgb(0, 0, 0);
-    width: 100%;
-    font-weight: bold;
-}
-
-/* parallax */
+/* parallax ___________________________________________________________________________________________________*/
 .parallax {
     background-image: url("parallax/guy.jpg");
     min-height: 400px;
@@ -272,7 +174,28 @@ header {
     background-size: cover;
 }
 
-/* blog */
+.module:hover {
+    cursor: url('parallax/mountain.png'), auto;	
+  }
+
+  .module-m:hover {
+    cursor: url('parallax/beach.png'), auto;	
+  }
+
+  .module-mod:hover {
+    cursor: url('parallax/pencil.png'), auto;	
+  }
+
+.fade
+{
+        opacity:0.8;
+}
+.fade:hover
+{
+        opacity:1;
+}
+
+/* blog ________________________________________________________________________________________________________ */
 .blog {
     width: 100%;
     background-color: #151515;
@@ -373,34 +296,42 @@ a {
 .blog_1:hover {
     box-shadow: 0 0 20px rgb(212, 212, 212);
     cursor: pointer;
+    transform: rotate(2deg);
+    
 }
 
 .blog_2:hover {
     box-shadow: 0 0 20px rgb(212, 212, 212);
     cursor: pointer;
+    transform: rotate(2deg);
+    
 }
 
 .blog_3:hover {
     box-shadow: 0 0 20px rgb(212, 212, 212);
     cursor: pointer;
+    transform: rotate(2deg);
 }
 
 .blog_4:hover {
     box-shadow: 0 0 20px rgb(212, 212, 212);
     cursor: pointer;
+    transform: rotate(2deg);
 }
 
 .blog_5:hover {
     box-shadow: 0 0 20px rgb(212, 212, 212);
     cursor: pointer;
+    transform: rotate(2deg);
 }
 
 .blog_6:hover {
     box-shadow: 0 0 20px rgb(212, 212, 212);
     cursor: pointer;
+    transform: rotate(2deg);
 }
 
-/* parallax */
+/* parallax _______________________________________________________________________________________________*/
 .parallax2 {
     background-image: url("parallax/sky.jpg");
     min-height: 400px;
@@ -410,7 +341,7 @@ a {
     background-size: cover;
 }
 
-/*gallery*/
+/*gallery___________________________________________________________________________________________________*/
 .gallery {
     width: 100%;
     min-height: 400px;

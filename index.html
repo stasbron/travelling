@@ -6,6 +6,8 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
+        <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css"
+        <link rel="stylesheet" href="css/animate.css">
         <link rel="stylesheet" href="css/index.css">
         <link rel="stylesheet" href="css/layout.css">
         <link rel="apple-touch-icon" sizes="57x57" href="site_icons/ico.png">
@@ -22,7 +24,7 @@
             <div id="clockbox"></div>
             <div class="nav-wrapper" id="home">
                 <nav>
-                    <div class="logo">TRAVELLER.COM
+                    <div class="logo wow flip retroshadow">TRAVELLER.COM
                 </div>
                     <div class="menu">
                         <div id="hamburger">
@@ -50,95 +52,44 @@
                     </div>
                 </nav>
             </div>
-            <div class="head-title">
+            <div class="head-title wow flash ">
                 <p>Welcome on my travel site</p>
             </div>
-            <video autoplay loop muted>
-                <source src="video/video.mp4" type="video/mp4">Your browser does not support the video tag.>
-            
-            </video>
         </header>
         <!-- about -->
         <main>
-            <div class="about smooth" id="about_me">
-                <div class="about-main">
-                    <div class="text-about">
-                        <div class="text-about-title">
-                            <p id="title-information">about</p>
-                            <p id="more-about">More About Me.</p>
-                            <img src="images/stanislav.png" alt="stanislav personal photo" class="stanislav-personal-photo">
-                        </div>
-                        <div class="text-about-me">
-                            <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut quia dolorum rerum commodi, placeat blanditiis
-                        atque, sint quisquam impedit corporis dicta, ipsum pariatur quasi? Quae minima saepe eaque quibusdam
-                        nam!
-                    </p>
-                            <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut quia dolorum rerum commodi, placeat blanditiis
-                        atque, sint quisquam impedit corporis dicta, ipsum pariatur quasi? Quae minima saepe eaque quibusdam
-                        nam!
-                    </p>
-                            <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut quia dolorum rerum commodi, placeat blanditiis
-                        atque, sint quisquam impedit corporis dicta, ipsum pariatur quasi? Quae minima saepe eaque quibusdam
-                        nam!
-                    </p>
-                            <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut quia dolorum rerum commodi, placeat blanditiis
-                        atque, sint quisquam impedit corporis dicta, ipsum pariatur quasi? Quae minima saepe eaque quibusdam
-                        nam!
-                    </p>
-                            <form action="#contact_me">
-                                <button class="about-button">CONTACT ME</button>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-                <div class="subject">
-                    <div class="text-why">
-                        <p id="title-information-subject">subject</p>
-                        <p id="more-about-subject">Why do i like travelling?</p>
-                        <p id="about-paragraph-first">there are a few reasons why do i really keen of travelling:</p>
-                        <div class="why">
-                            <div class="icon">
-                                <img src="site_icons/icon.png" alt="icon">
-                            </div>
+                <div class="smooth" id="about_me">
+                        <h1 class="heading wow pulse">about me</h1>
+                        <div class="main-carousel" data-flickity='{ "cellAlign": "left", "autoPlay": 2000, "contain": true }'>
+                          <div class="carousel-cell">
+                            <img src="images/stanislav.png" alt="stanislav bronevytskyy" class="my-own-photo">
                             <div class="description">
-                                <p class="description-text">it is interesting</p>
-                                <p class="why-information">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus id illum officiis maiores nisi
-                                earum assumenda amet sit iusto rem, provident eveniet ab quae atque numquam blanditiis aliquam
-                                laboriosam ad?</p>
+                              <p class="text-about-me">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non labore quae voluptates sunt, asperiores minima tenetur, iste temporibus mollitia dolore rerum accusantium iusto impedit repellendus dolores atque necessitatibus veniam hic?</p>
                             </div>
+                          </div>
+                          <div class="carousel-cell">
+                            <img src="images/stanislav_bro.png" alt="stanislav bronevytskyy" class="my-own-photo">
+                            <div>
+                              <p class="text-about-me">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non labore quae voluptates sunt, asperiores minima tenetur, iste temporibus mollitia dolore rerum accusantium iusto impedit repellendus dolores atque necessitatibus veniam hic?</p>
+                            </div>
+                          </div>
+                          <div class="carousel-cell">
+                            <img src="images/stanislav_bron.png" alt="stanislav bronevytskyy" class="my-own-photo">
+                            <div>
+                              <p class="text-about-me">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non labore quae voluptates sunt, asperiores minima tenetur, iste temporibus mollitia dolore rerum accusantium iusto impedit repellendus dolores atque necessitatibus veniam hic?</p>
+                            </div>
+                          </div>
                         </div>
-                        <div class="why">
-                            <div class="icon">
-                                <img src="site_icons/icon.png" alt="icon">
-                            </div>
-                            <div class="description">
-                                <p class="description-text">always meet new people</p>
-                                <p class="why-information">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus id illum officiis maiores nisi
-                                earum assumenda amet sit iusto rem, provident eveniet ab quae atque numquam blanditiis aliquam
-                                laboriosam ad?</p>
-                            </div>
-                        </div>
-                        <div class="why">
-                            <div class="icon">
-                                <img src="site_icons/icon.png" alt="icon">
-                            </div>
-                            <div class="description">
-                                <p class="description-text">learn another culture,try another food</p>
-                                <p class="why-information">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus id illum officiis maiores nisi
-                                earum assumenda amet sit iusto rem, provident eveniet ab quae atque numquam blanditiis aliquam
-                                laboriosam ad?</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+                      </div>
+                      <div class="under-about"></div>
+           
             <!-- parallax -->
-            <div class="parallax"></div>
+            <div class="parallax module fade"></div>
             <!--blog-->
             <div class="blog smooth" id="my_blog">
                 <div class="blog_section">
                     <a href="blog.html" target="_blank">
-                        <div class="blog_1">
+                        <div class="blog_1 wow swing">
                             <img src="images/we_in_poland.jpg" alt="man and woman are sitting on the rocks">
                             <h3>TRIP TO POLAND</h3>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim nobis sapiente sit recusandae accusantium,
@@ -146,7 +97,7 @@
                         </div>
                     </a>
                     <a href="blog.html" target="_blank">
-                        <div class="blog_2">
+                        <div class="blog_2 wow swing">
                             <img src="images/tasty_food.jpg" alt="some waffles with jam topping">
                             <h3>TRIP TO BELGIUM</h3>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim nobis sapiente sit recusandae accusantium,
@@ -154,7 +105,7 @@
                         </div>
                     </a>
                     <a href="blog.html" target="_blank">
-                        <div class="blog_3">
+                        <div class="blog_3 wow swing">
                             <img src="images/house.jpg" alt="an old house">
                             <h3>TRIP TO GREECE</h3>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim nobis sapiente sit recusandae accusantium,
@@ -164,7 +115,7 @@
                 </div>
                 <div class="blog_section">
                     <a href="blog.html" target="_blank">
-                        <div class="blog_4">
+                        <div class="blog_4 wow swing">
                             <img src="images/wave.jpg" alt="storming see">
                             <h3>TRIP TO TURKEY</h3>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim nobis sapiente sit recusandae accusantium,
@@ -172,7 +123,7 @@
                         </div>
                     </a>
                     <a href="blog.html" target="_blank">
-                        <div class="blog_5">
+                        <div class="blog_5 wow swing">
                             <img src="images/boats.jpg" alt="boats on the water">
                             <h3>TRIP TO CROATIA</h3>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim nobis sapiente sit recusandae accusantium,
@@ -180,7 +131,7 @@
                         </div>
                     </a>
                     <a href="blog.html" target="_blank">
-                        <div class="blog_6">
+                        <div class="blog_6 wow swing">
                             <img src="images/bicycle.jpg" alt="bicycle with kids">
                             <h3>TRIP TO NETHERLANDS</h3>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim nobis sapiente sit recusandae accusantium,
@@ -190,7 +141,7 @@
                 </div>
             </div>
             <!-- parallax -->
-            <div class="parallax2"></div>
+            <div class="parallax2 module-m fade" ></div>
             <!--gallery-->
             <div class="smooth gallery" id="my_gallery">
                 <div class="gallery-wrapper">
@@ -320,7 +271,7 @@
             </div>
             <!--contact-->
             <div class="contact smooth" id="contact_me">
-                <div class="form">
+                <div class="form wow rotateIn">
                     <h2>CONTACT ME</h2>
                     <form method="POST" action="https://formspree.io/ssbron2@gmail.com">
                         <p>
@@ -339,11 +290,11 @@
                 </div>
             </div>
             <!-- parallax -->
-            <div class="parallax3"></div>
+            <div class="parallax3 module-mod"></div>
         </main>
         <footer>
             <div class="end-of-site">
-                <div class="end-of-site-home">
+                <div class="end-of-site-home wow slideInLeft">
                     <h3>my location:</h3>
                     <p>Ukraine, Lviv, Sheptytskykh str., 10/10
                         </p>
@@ -354,7 +305,7 @@
                     <p>(032)2388871
                         </p>
                 </div>
-                <div class="end-of-site-office">
+                <div class="end-of-site-office wow slideInRight">
                     <h3>my office:</h3>
                     <p>Ukraine, Lviv, Sh. Rustaveli str., 18
                         </p>
@@ -367,7 +318,7 @@
                 </div>
             </div>
             <div class="end-of-site-icons">
-                <div class="icons-of-site">
+                <div class="icons-of-site wow slideInUp">
                     <a href="https://www.facebook.com/stas.bronevytskyy" target="_blank">
                         <img src="site_icons/facebook_icon.png" alt="facebook icon">
                     </a>
@@ -380,7 +331,7 @@
                 </div>
             </div>
         </footer>
-       
+        <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
         <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
         <script src="js/wow.js"></script>
         <script src="js/smooth.js"></script>
