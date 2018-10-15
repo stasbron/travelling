@@ -173,26 +173,13 @@ header {
     background-size: cover;
 }
 
-.module:hover {
-    cursor: url('parallax/mountain.png'), auto;	
-  }
 
-  .module-m:hover {
-    cursor: url('parallax/beach.png'), auto;	
-  }
 
   .module-mod:hover {
     cursor: url('parallax/pencil.png'), auto;	
   }
 
-.fade
-{
-        opacity:0.8;
-}
-.fade:hover
-{
-        opacity:1;
-}
+
 
 /* blog ________________________________________________________________________________________________________ */
 .blog {
